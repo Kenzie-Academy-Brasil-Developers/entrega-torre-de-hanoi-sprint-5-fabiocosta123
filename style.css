@@ -1,51 +1,88 @@
-  @media screen and (max-width: 550px){
-    
-  #objetoQuatro,h2{  display: flex;
-    background-color: blue; 
-    color:white;
-    flex-direction: column-reverse; 
-    padding: 30px;
-    align-items: center;
-    box-sizing: 100px;
-    width: 30%;
-    text-align: center;
-    margin: 0 auto;
-}
-#objetoTres,h3{  display: flex;
-  background-color: rgb(255, 0, 34); 
-  color:rgb(255, 255, 255);
-  flex-direction: column-reverse; 
-  padding: 30px;
-  align-items:center;
-  box-sizing: 100px;
-  width: 20%;
-  text-align: center;
-  margin: 0 auto;
-}
-#objetoDois,h4{  display: flex;
-  background-color: rgb(11, 238, 49); 
-  color:rgb(17, 16, 16);
-  flex-direction: column-reverse; 
-  padding: 30px;
-  align-items:center;
-  box-sizing: 100px;
-  width: 15%;
-  text-align: center;
-  margin: 0 auto;
-}
-#objetoUm,h5{  display: flex;
-  background-color: rgb(0, 0, 0); 
-  color:rgb(242, 250, 251);
-  flex-direction: column-reverse; 
-  padding: 30px;
-  align-items:center;
-  box-sizing: 100px;
-  width: 10%;
-  text-align: center;
-  margin: 0 auto;
-}
+    .TorreDeHanoi{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 450px;
+        width: 800px;
+        background: rgb(29, 29, 139);
+        position: relative;
+    }
+    .torre {
+        position: relative;
+        
+    }
 
-.torreEsquerda{
-  border: black solid 2px;
-}
-}
+    .torre::after{
+        display: block;
+        content: " ";
+        position: absolute;
+        width: 30px;
+        height: 300px;
+        bottom: 0;
+        left: 80px;
+        background: chocolate;
+        border-radius: 10px 10px 0 0 ;
+
+    }
+    .disco{
+        z-index: 2;
+        margin-top: 35%;
+    }
+   
+
+    
+    h1 {
+        display: flex;
+        background-color: red;
+        width: 80px;
+        height: 30px;
+        justify-content: center;
+        padding-bottom: 12%;
+        border-radius: 20px;
+        margin-left: 20%;
+        
+
+    }
+    h2{
+        display: flex;
+        background-color: rgb(47, 0, 255);
+        width: 120px;
+        height: 30px;
+        justify-content: center;
+        padding-bottom: 12%;
+        border-radius: 20px;
+        margin-left: 13%;
+    }
+    h3 {
+        display: flex;
+        background-color: rgb(12, 11, 11);
+        color: white;
+        width: 140px;
+        height: 30px;
+        justify-content: center;
+        padding-bottom: 12%;
+        border-radius: 20px;
+        margin-left: 9%;
+    
+    }
+    h4{
+        display: flex;
+        background-color: rgb(21, 255, 0);
+        width: 180px;
+        height: 30px;
+        justify-content: center;
+        padding-bottom: 12%;
+        border-radius: 20px;
+        margin-left: 2%;
+       
+    }
+    
+    
+    
+    
+    
+
+  
+ 
+
+
+    
