@@ -34,7 +34,7 @@ torreEsquerda.addEventListener('click',function(){
 console.log(torreMeio)
 console.log(torreDireita)
 console.log(torreEsquerda)
-
+// interceptar click
  function interceptar(evt){
      const div = evt.target
      if(div.tagName === 'DIV'){
@@ -43,7 +43,7 @@ console.log(torreEsquerda)
          console.log(disco)
      }
  }
-
+// ver funcionalidade mover o disco para torre
 function moverDisco(torre,disco){
     torre.appendChild(disco)
 
@@ -56,4 +56,5 @@ function moverDisco(torre,disco){
     torre.appendChild(disco)
 
 }
+// analisar regras do jogo
 function condiçaoVitoria(){}
