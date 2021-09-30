@@ -6,12 +6,36 @@
         background: rgb(29, 29, 139);
         position: relative;
     }
-    .torre {
+    .torre1,.torre2,.torre3 {
         position: relative;
         
     }
 
-    .torre::after{
+    .torre1::after{
+        display: block;
+        content: " ";
+        position: absolute;
+        width: 30px;
+        height: 300px;
+        bottom: 0;
+        left: 80px;
+        background: chocolate;
+        border-radius: 10px 10px 0 0 ;
+
+    }
+    .torre2::after{
+        display: block;
+        content: " ";
+        position: absolute;
+        width: 30px;
+        height: 300px;
+        bottom: 0;
+        left: 80px;
+        background: chocolate;
+        border-radius: 10px 10px 0 0 ;
+
+    }
+    .torre3::after{
         display: block;
         content: " ";
         position: absolute;
@@ -52,6 +76,7 @@
         padding-bottom: 12%;
         border-radius: 20px;
         margin-left: 13%;
+        
     }
     h3 {
         display: flex;
